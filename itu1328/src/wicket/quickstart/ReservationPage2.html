@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Reservation Page</title>
+<link rel="stylesheet" href="style.css" />
+<style type="text/css">
+body {
+	background: #F2F2F2;
+}
+</style>
+</head>
+<body>
+	<div style="margin: 10px auto; width: 1000px; height: 50px;">
+		<header>
+			<nav wicket:id="nav"></nav>
+		</header>
+	</div>
+	<div
+		style="width: 1000px; margin: 30px auto; background: white; border: 1px solid black; border-radius: 10px; height: 300px; padding: 10px;">
+		<h1>Reservation Page</h1>
+		<form action="#" wicket:id="enter_reservation">
+			<table>
+				<tr>
+					<th>Branch selection</th>
+					<td><select wicket:id="branch"
+						value="select branch required autofocus"></select></td>
+				</tr>
+				<tr>
+					<th>Giris Tarihi:</th>
+					<td><select wicket:id="giris_gunu" value="select day" required
+						autofocus></select> <select wicket:id="giris_ayi"
+						value="select mounth" required autofocus></select> <select
+						wicket:id="giris_yili" value="select year" required autofocus></select>
+					</td>
+				</tr>
+				<tr>
+					<th>Cikis Tarihi:</th>
+					<td><select wicket:id="cikis_gunu" value="select day" required
+						autofocus></select> <select wicket:id="cikis_ayi"
+						value="select mounth" required autofocus></select> <select
+						wicket:id="cikis_yili" value="select year" required autofocus></select>
+					</td>
+				</tr>
+				<tr>
+					<th>Number of Rooms:</th>
+					<td><select wicket:id="numberOfRooms" value="number of rooms"
+						required autofocus></select></td>
+				</tr>
+			</table>
+			<input wicket:id=submitForm value="Submit" name="submit"
+				type="submit" />
+		</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+	<body>
+	<header>
+    	<nav wicket:id="mainNavigation" ></nav>
+  	</header>
+	
+	
+	
+		<h3>User Profile</h3>
+		
+		<div>
+			<table>
+				<tr>
+					<th>Name:</th>
+					<td wicket:id="name">Name:</td>
+				</tr>
+				<tr>
+					<th>Contact:</th>
+					<td wicket:id="contact">Contact:</td>
+				</tr>
+				<tr>
+					<th>Mail:</th>
+					<td wicket:id="mail">Mail:</td>
+				</tr>
+			</table>
+		
+		</div>
+		
+		
+		
+		
+		<div>
+			<span><h2>Reservations:</h2></span>
+		</div>
+
+	
+	
+<form action="#" wicket:id="reservationForm">
+  
+  
+    <table>
+      <tr wicket:id="reservationList">
+     
+        <td>
+          
+            <span wicked:id="branchID">istanbul</span>
+			<span wicked:id="roomType">single bed</span>
+			(<span wicked:id="startDate">12.3.2013</span>)
+			(<span wicked:id="endDate">12.21.2013</span>)
+          
+        </td>
+      </tr>
+    </table>
+  
+  	<div >
+  		<input type="submit" value="Delete" name="delete" />
+	</div>
+</form>
+
+
+
+<footer>
+    <div id="datetime" wicket:id="datetime">
+       Wed Sep 4 15:32:40 EEST 2013
+    </div>
+  </footer>
+
+		
+			
+	</body>
+</html>

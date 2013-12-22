@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Branches</title>
+<link rel="stylesheet" href="style.css" />
+
+<style>
+#branches
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:100%;
+border-collapse:collapse;
+}
+#branches td, #customers th 
+{
+font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;
+}
+#branches th 
+{
+font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;
+}
+#branches tr.alt td 
+{
+color:#000000;
+background-color:#EAF2D3;
+}
+
+body {
+	background-color: #F2F2F2;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div style="margin: 10px auto; width: 1000px; height: 50px;">
+  <header>
+    <nav wicket:id="mainNavigation"></nav>
+  </header>
+ </div> 
+  <div
+		style="margin: 25px auto; background: White; width: 1000px; border: 1px solid black; border-radius: 10px; padding: 10px;">
+
+
+      
+	<table id="branches">
+	
+		<tr >
+			<th>Branch</th>
+			<th>Address</th>
+			<th>Telephone</th>
+			<th>Facility</th>
+		</tr>
+		<tr class="alt" wicket:id="branch_list">
+			<td><span wicket:id="BranchName"></span></td>
+			<td><span wicket:id="BranchAddress"></span></td>
+			<td ><span wicket:id="BranchPhone"></span></td>	
+			<td><a href="#" wicket:id="link">Take a Look!</a></td>
+			<td style="visibility:hidden"><span wicket:id="BranchId"></span></td>
+			
+		</tr>
+	</table>  	
+  
+  
+  
+  
+  <footer style = "margin:40px">
+    <div id="datetime" wicket:id="datetime">
+       Wed Sep 4 15:32:40 EEST 2013
+    </div>
+  </footer>
+  
+  </div>
+  
+	
+</body>
+</html>

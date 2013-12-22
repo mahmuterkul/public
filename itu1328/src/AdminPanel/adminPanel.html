@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Room</title>
+<style type="text/css">
+.adminLeftBLock {
+	list-style-type: none;
+}
+
+.right_block {
+	float: left;
+	margin: 10px;
+	border-radius: 10px;
+	width: 600px;
+}
+
+.adminLeftBlock li {
+	float: left;
+	margin: 5px;
+	list-style-type: none;
+}
+
+table tr td,th {
+	padding: 5px;
+	width: 125px;
+}
+
+body {
+	background: #F2F2F2;
+}
+
+p {
+	width: 100px;
+	margin: 10px;
+	float: left;
+}
+</style>
+</head>
+<body>
+	<div
+		style="height: 50px; margin: 10px; background: blue; color: white; border-radius: 10px; padding: 10px; font-family: sans-serif;">Welcome
+		To The Admin Panel- You Are At "Add Room" Page</div>
+	<nav wicket:id="adminNavigation"></nav>
+	<div class="right_block">
+		<form wicket:id="addRoom">
+			<div
+				style="margin: 10px; border: 1px solid gray; border-radius: 10px; width: 500px; float: left; padding: 10px; background-color: white;">
+				<div>
+					<p>Room Type :</p>
+					<select wicket:id="roomType"></select>
+				</div>
+				<div style="clear: both;"></div>
+				<div>
+					<p>Room Number :</p>
+					<input type="text" wicket:id="roomNumber" placeholder="Room Number">
+				</div>
+				<div style="clear: both;"></div>
+				<div>
+					<p>Room Price :</p>
+					<input type="text" wicket:id="roomPrice" placeholder="Room Price">
+				</div>
+				<div style="clear: both;"></div>
+				<div>
+					<p>Branch :</p>
+					<select wicket:id="branch"></select>
+				</div>
+				<div style="clear: both;"></div>
+				<div>
+					<input type="submit" value="Submit" />
+				</div>
+				<div
+					style="background-color: blue; color: white; padding: 10px; margin: 10px; width: 250px; position: relative; left: 28%;">
+					<p wicket:id="resultStatus"></p>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

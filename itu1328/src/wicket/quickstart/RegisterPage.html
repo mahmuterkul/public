@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+ <meta charset="utf-8" />
+ <title>MovieDB - Home</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav wicket:id="mainNavigation">
+      
+    </nav>
+  </header>
+  
+  
+  <form wicket:id="registerForm">
+  <table>
+  	<tr>
+  		<th>Name:</th>
+  		<td><input wicket:id="custName" type="text" /></td>
+  	</tr>
+  	<tr>
+  		<th>Phone:</th>
+  		<td><input wicket:id="custInfo" type="text" /></td>
+  	</tr>
+  	<tr>
+  		<th>Mail:</th>
+  		<td><input wicket:id="custMail" type="text" /></td>
+  	</tr>
+  	<tr>
+  		<th>Password:</th>
+  		<td><input wicket:id="custPass" type="text" /></td>
+  	</tr>
+  
+  	<tr>
+  		<td><input type="submit" value="Submit" name="submit" /></td>
+  	</tr>
+  
+  </table>
+  </form>
+
+
+  <footer>
+    <div id="datetime" wicket:id="datetime">
+       Wed Sep 4 15:32:40 EEST 2013
+    </div>
+  </footer>
+</body>
+</html>

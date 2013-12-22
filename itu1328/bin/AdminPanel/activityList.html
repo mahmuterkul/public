@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+table tr td,th {
+	padding: 5px;
+	width: 125px;
+}
+
+body {
+	background: #F2F2F2;
+}
+</style>
+</head>
+<body>
+	<div
+		style="height: 50px; margin: 10px; background: blue; color: white; border-radius: 10px; padding: 10px; font-family: sans-serif;">Welcome
+		To The Admin Panel - You Are At "List Activity" Page</div>
+	<nav wicket:id="adminNavigation"></nav>
+	<div class="right_block">
+		<div
+			style="margin: 10px; border: 1px solid gray; border-radius: 10px; width: 500px; float: left; padding: 10px; background-color: white;">
+			<table border="1">
+				<tr>
+					<th>Activity Title</th>
+					<th>Activity Info</th>
+					<th>Activity Start Hour</th>
+					<th>Activity End Hour</th>
+					<th>Branch</th>
+				</tr>
+				<tr wicket:id="activity_List">
+					<td><span wicket:id="title"></span></td>
+					<td><span wicket:id="info"></span></td>
+					<td><span wicket:id="startHour"></span></td>
+					<td><span wicket:id="endHour"></span></td>
+					<td><span wicket:id="BranchId"></span></td>
+					<td><input type="submit" wicket:id="delete" value="Delete"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

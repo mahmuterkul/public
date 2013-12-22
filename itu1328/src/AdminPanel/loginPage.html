@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<form wicket:id="loginForm">
+		<div
+			style="height: 150px; left: 36%; position: absolute; top: 50%; width: 350px; background: red; border-radius: 5px; color: blue;">
+			<div style="background-color: Blue;">
+				<p wicket:id="loginStatus"></p>
+			</div>
+			<div style="margin: 10px; height: 30px;">
+				<div style="float: left; width: 100px;">User Mail</div>
+				<div style="float: left; width: 100px;">
+					<input type="text" id="usermail" wicket:id="usermail"
+						placeholder="User Mail">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div style="margin: 10px; height: 30px;">
+				<div style="float: left; width: 100px;">Password</div>
+				<div style="float: left; width: 100px;">
+					<input type="password" id="password" wicket:id="password"
+						placeholder="Password">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div style="margin: 10px;">
+				<input value="Send" name="save" id="submit" type="submit" />
+			</div>
+		</div>
+	</form>
+</body>
+</html>

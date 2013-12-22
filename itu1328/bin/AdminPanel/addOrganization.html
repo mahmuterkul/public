@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Organization</title>
+<style type="text/css">
+table tr td,th {
+	padding: 5px;
+	width: 125px;
+}
+
+body {
+	background: #F2F2F2;
+}
+
+p {
+	width: 100px;
+	margin: 10px;
+	float: left;
+}
+</style>
+</head>
+<body>
+	<div
+		style="height: 50px; margin: 10px; background: blue; color: white; border-radius: 10px; padding: 10px; font-family: sans-serif;">Welcome
+		To The Admin Panel - You Are At "Add Organization" Page</div>
+	<div style="clear: both;"></div>
+	<nav wicket:id="adminNavigation"></nav>
+	<div class="right_block">
+		<form wicket:id="addOrganization">
+			<div
+				style="margin-left: 10px; border: 1px solid gray; border-radius: 10px; width: 700px; float: left; padding: 10px; background-color: white;">
+				<div>
+					<p>Organization Contact Info :</p>
+					<textarea rows="5" cols="50" wicket:id="contactInfo"></textarea>
+				</div>
+				<div style="clear: both;"></div>
+				<div>
+					<p>Branch :</p>
+					<select wicket:id="branch"></select>
+				</div>
+				<div style="clear: both;"></div>
+				<div>
+					<input type="submit" value="submit" />
+				</div>
+				<div
+					style="color: Blue; padding: 10px; margin: 10px; width: 250px; position: relative; left: 28%;">
+					<p></p>
+				</div>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>

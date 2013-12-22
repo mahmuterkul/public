@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>News</title>
+<link rel="stylesheet" href="style.css" />
+
+<style>
+#news {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#news td,#news th {
+	font-size: 1em;
+	border: 1px solid #98bf21;
+	padding: 3px 7px 2px 7px;
+}
+
+#news th {
+	font-size: 1.1em;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	background-color: #A7C942;
+	color: #ffffff;
+}
+
+#news tr.alt td {
+	color: #000000;
+	background-color: #EAF2D3;
+}
+
+body {
+	background-color: #F2F2F2;
+}
+</style>
+
+</head>
+<body>
+	<div style="margin: 10px auto; width: 1000px; height: 50px;">
+		<header>
+			<nav wicket:id="mainNavigation"></nav>
+		</header>
+
+	</div>
+	<div style="clear: both;"></div>
+	<div
+		style="margin: 25px auto; background: White; width: 1000px; border: 1px solid black; border-radius: 10px; padding: 10px;">
+		<h1>Actual News</h1>
+
+
+		<ul style="padding-left: 15px;" wicket:id="haberler_list">
+			<li style="list-style-type: none; border-bottom: 1px solid #A7A79C;"><span
+				wicket:id="newsTitle"></span><a
+				style="margin-right: 25px; color: blue; font-size: 12px; float: right; text-decoration: none;"
+				href="#" wicket:id="news_link">To The Detail!</a></li>
+		</ul>
+
+
+		<footer style="margin: 40px">
+			<div id="datetime" wicket:id="datetime">Wed Sep 4 15:32:40 EEST
+				2013</div>
+		</footer>
+	</div>
+</body>
+</html>

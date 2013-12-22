@@ -1,0 +1,47 @@
+body {
+	background-color: #220000;
+	color: #6F6F6F;
+	font-family: 'Droid Sans', 'Helvetica', 'sans';
+	font-size: 14pt;
+	margin: 2ex 2em;
+}
+
+h1,h2,h3,h4 {
+	color: #6F6F6F;
+}
+
+a {
+	color: #E9301B;
+	text-decoration: underline;
+}
+
+div#datetime {
+	font-size: 80%;
+	text-align: center;
+}
+
+nav ul {
+	background: red;
+	height: 65px;
+	border-radius: 10px;
+}
+
+nav li {
+	margin-right: 1em;
+	list-style-type: none;
+	float: left;
+	margin-top: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+nav li a {
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 10px;
+	text-decoration: none;
+	border: 1px solid blue;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>MovieDB - Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header>
+		<nav wicket:id="mainNavigation">navigation links</nav>
+	</header>
+
+	<table border="1">
+		<tr>
+			<th>Room Type</th>
+			<th>Room No</th>
+			<th>Room Price</th>
+			<th>Make Reservation</th>
+			<th>Process</th>
+		</tr>
+		<tr wicket:id="room_List">
+			<td><span wicket:id="RoomType"></span></td>
+			<td><span wicket:id="RoomNo"></span></td>
+			<td><span wicket:id="RoomPrice"></span></td>
+			<td><a href="#" wicket:id="reserve">Make Reservation</a></td>
+		</tr>
+	</table>
+
+	<footer>
+		<div id="datetime" wicket:id="datetime">Wed Sep 4 15:32:40 EEST
+			2013</div>
+	</footer>
+</body>
+</html>
